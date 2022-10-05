@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".screen.main.setting.changeInfo.ChangeInfoFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/Widget.MaterialManagement.Toolbar.WithArrow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/changeInfo"
+            android:textColor="@color/main_color"
+            />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fitsSystemWindows="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toTopOf="@id/editButton"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/start_guid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="15dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/end_guid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="15dp" />
+
+            <ImageButton
+                android:id="@+id/profileImb"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@null"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_default_profile"
+                android:contentDescription="@string/profile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+
+            <TextView
+                android:id="@+id/pwTxv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/password"
+                android:textColor="@color/font_gray_color"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@id/start_guid"
+                app:layout_constraintTop_toBottomOf="@id/profileImb" />
+
+            <EditText
+                android:id="@+id/pwEdit"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_edit_id"
+                android:hint="@string/input_password"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:nextFocusDown="@id/pwConfirmEdit"
+                android:paddingHorizontal="15dp"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="@id/end_guid"
+                app:layout_constraintStart_toStartOf="@id/start_guid"
+                app:layout_constraintTop_toBottomOf="@id/pwTxv" />
+
+
+            <TextView
+                android:id="@+id/pwConfirmTxv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/pwConfirm"
+                android:textColor="@color/font_gray_color"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@id/start_guid"
+                app:layout_constraintTop_toBottomOf="@id/pwEdit" />
+
+            <EditText
+                android:id="@+id/pwConfirmEdit"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_edit_id"
+                android:hint="@string/inputPwConfirm"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:nextFocusDown="@id/armyUnitNameEdit"
+                android:paddingHorizontal="15dp"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="@id/end_guid"
+                app:layout_constraintStart_toStartOf="@id/start_guid"
+                app:layout_constraintTop_toBottomOf="@id/pwConfirmTxv" />
+
+
+            <TextView
+                android:id="@+id/armyUnitNameTxv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/armyUnitName"
+                android:textColor="@color/font_gray_color"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@id/start_guid"
+                app:layout_constraintTop_toBottomOf="@id/pwConfirmEdit" />
+
+            <EditText
+                android:id="@+id/armyUnitNameEdit"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_edit_id"
+                android:hint="@string/inputArmyUnitName"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:maxLength="6"
+                android:maxLines="1"
+                android:nextFocusDown="@id/divisionEdit"
+                android:paddingHorizontal="15dp"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="@id/end_guid"
+                app:layout_constraintStart_toStartOf="@id/start_guid"
+                app:layout_constraintTop_toBottomOf="@id/armyUnitNameTxv" />
+
+            <TextView
+                android:id="@+id/divisionTxv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/armyUnitDivision"
+                android:textColor="@color/font_gray_color"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@id/start_guid"
+                app:layout_constraintTop_toBottomOf="@id/armyUnitNameEdit" />
+
+            <EditText
+                android:id="@+id/divisionEdit"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_edit_id"
+                android:hint="@string/inputArmyUnitDivision"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:maxLength="4"
+                android:maxLines="1"
+                android:nextFocusDown="@id/regimentEdit"
+                android:paddingHorizontal="15dp"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="@id/end_guid"
+                app:layout_constraintStart_toStartOf="@id/start_guid"
+                app:layout_constraintTop_toBottomOf="@id/divisionTxv" />
+
+
+            <TextView
+                android:id="@+id/regimentTxv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/regiment"
+                android:textColor="@color/font_gray_color"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@id/start_guid"
+                app:layout_constraintTop_toBottomOf="@id/divisionEdit" />
+
+            <EditText
+                android:id="@+id/regimentEdit"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_edit_id"
+                android:hint="@string/inputRegiment"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:maxLength="4"
+                android:maxLines="1"
+                android:nextFocusDown="@id/battalionEdit"
+                android:paddingHorizontal="15dp"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="@id/end_guid"
+                app:layout_constraintStart_toStartOf="@id/start_guid"
+                app:layout_constraintTop_toBottomOf="@id/regimentTxv" />
+
+
+            <TextView
+                android:id="@+id/battalionTxv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/battalion"
+                android:textColor="@color/font_gray_color"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@id/start_guid"
+                app:layout_constraintTop_toBottomOf="@id/regimentEdit" />
+
+            <EditText
+                android:id="@+id/battalionEdit"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_edit_id"
+                android:hint="@string/inputBattalion"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:maxLength="3"
+                android:maxLines="1"
+                android:paddingHorizontal="15dp"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/end_guid"
+                app:layout_constraintStart_toStartOf="@id/start_guid"
+                app:layout_constraintTop_toBottomOf="@id/battalionTxv" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/main_color"
+        android:text="@string/edit"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scrollView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.raonsoft.matmanagement.screen.main.home.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/accountManagement"
+        android:name="com.raonsoft.matmanagement.screen.main.account_management.AccountManagementFragment"
+        android:label="@string/accountManagement"
+        tools:layout="@layout/fragment_account_management" />
+
+    <fragment
+        android:id="@+id/itemManagement"
+        android:name="com.raonsoft.matmanagement.screen.main.item_management.ItemManagementFragment"
+        android:label="@string/itemManagement"
+        tools:layout="@layout/fragment_account_management" />
+
+    <fragment
+        android:id="@+id/setting"
+        android:name="com.raonsoft.matmanagement.screen.main.setting.SettingFragment"
+        android:label="@string/setting"
+        tools:layout="@layout/fragment_setting">
+        <action
+            android:id="@+id/action_setting_to_changeInfo"
+            app:destination="@id/changeInfo" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/changeInfo"
+        android:name="com.raonsoft.matmanagement.screen.main.setting.changeInfo.ChangeInfoFragment"
+        android:label="@string/changeInfo"
+        tools:layout="@layout/fragment_change_info" />
+
+
+</navigation>

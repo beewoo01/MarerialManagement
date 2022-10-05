@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.editProduct.EditProductActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="?attr/toolbarWithArrowButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/titleTxv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/main_color"
+            android:textStyle="bold"
+            tools:text="베레모" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/start_guid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="15dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/end_guid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="15dp" />
+
+
+            <TextView
+                android:id="@+id/productNameTxv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/productName"
+                android:textColor="@color/font_gray_color"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@id/productNameEdit"
+                app:layout_constraintStart_toStartOf="@id/start_guid"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <EditText
+                android:id="@+id/productNameEdit"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_edit_id"
+                android:hint="@string/inputProductName"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:nextFocusDown="@id/tagInfoEdit"
+                android:paddingHorizontal="15dp"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toTopOf="@id/tagInfoTxv"
+                app:layout_constraintEnd_toEndOf="@id/end_guid"
+                app:layout_constraintStart_toStartOf="@id/start_guid"
+                app:layout_constraintTop_toBottomOf="@id/productNameTxv" />
+
+            <TextView
+                android:id="@+id/tagInfoTxv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/tagInfo"
+                android:textColor="@color/font_gray_color"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@id/start_guid"
+                app:layout_constraintBottom_toTopOf="@id/tagInfoEdit"
+                app:layout_constraintTop_toBottomOf="@id/productNameEdit" />
+
+            <EditText
+                android:id="@+id/tagInfoEdit"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_edit_id"
+                android:hint="@string/inputTagInfo"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:nextFocusDown="@id/specialEdit"
+                android:paddingHorizontal="15dp"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toTopOf="@id/specialTxv"
+                app:layout_constraintEnd_toEndOf="@id/end_guid"
+                app:layout_constraintStart_toStartOf="@id/start_guid"
+                app:layout_constraintTop_toBottomOf="@id/tagInfoTxv" />
+
+
+            <TextView
+                android:id="@+id/specialTxv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/special"
+                android:textColor="@color/font_gray_color"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@id/specialEdit"
+                app:layout_constraintStart_toStartOf="@id/start_guid"
+                app:layout_constraintTop_toBottomOf="@id/tagInfoEdit" />
+
+            <EditText
+                android:id="@+id/specialEdit"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_edit_id"
+                android:gravity="start"
+                android:hint="@string/inputTagInfo"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="10dp"
+                android:textSize="13sp"
+                app:layout_constraintBottom_toTopOf="@id/checkBox"
+                app:layout_constraintEnd_toEndOf="@id/end_guid"
+                app:layout_constraintStart_toStartOf="@id/start_guid"
+                app:layout_constraintTop_toBottomOf="@id/specialTxv" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="20dp"
+                android:button="@null"
+                android:checked="false"
+                android:drawableEnd="@drawable/checkbox"
+                android:drawablePadding="10dp"
+                android:minHeight="48dp"
+                android:text="@string/disposal"
+                android:textColor="@color/font_gray_color"
+                app:layout_constraintBottom_toTopOf="@id/statusLayout"
+                app:layout_constraintStart_toStartOf="@id/start_guid"
+                app:layout_constraintTop_toBottomOf="@id/specialEdit" />
+
+            <LinearLayout
+                android:id="@+id/statusLayout"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:background="@drawable/bg_full_round_sub_color"
+                android:drawableStart="@drawable/ic_plus"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                app:layout_constraintBottom_toTopOf="@id/editButton"
+                app:layout_constraintEnd_toEndOf="@id/end_guid"
+                app:layout_constraintStart_toStartOf="@id/start_guid"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox">
+
+                <TextView
+                    android:id="@+id/productStatusTxv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/main_color"
+                    app:drawableStartCompat="@drawable/ic_plus"
+                    app:layout_constraintEnd_toEndOf="@id/end_guid"
+                    app:layout_constraintStart_toStartOf="@id/start_guid"
+                    app:layout_constraintTop_toBottomOf="@id/checkBox"
+                    tools:text="자재명1은 현재 불출상태입니다." />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/editButton"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/main_color"
+                android:text="@string/edit"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/statusLayout"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

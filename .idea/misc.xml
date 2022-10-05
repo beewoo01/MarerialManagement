@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../../../layout/custom_preview.xml" value="0.19424823410696265" />
+        <entry key="../.gradle/caches/transforms-3/234a538a20b20407a3c9b7e7a53bb83d/transformed/core-1.7.0/res/drawable/notification_bg_low.xml" value="0.204" />
+        <entry key="../.gradle/caches/transforms-3/b07e2ea96ad9bd2cb8ab939ac9c3a895/transformed/appcompat-1.4.1/res/drawable/abc_btn_check_material.xml" value="0.204" />
+        <entry key="../.gradle/caches/transforms-3/b07e2ea96ad9bd2cb8ab939ac9c3a895/transformed/appcompat-1.4.1/res/drawable/abc_edit_text_material.xml" value="0.204" />
+        <entry key="../.gradle/caches/transforms-3/b07e2ea96ad9bd2cb8ab939ac9c3a895/transformed/appcompat-1.4.1/res/drawable/abc_ic_menu_paste_mtrl_am_alpha.xml" value="0.204" />
+        <entry key="../.gradle/caches/transforms-3/b07e2ea96ad9bd2cb8ab939ac9c3a895/transformed/appcompat-1.4.1/res/drawable/tooltip_frame_dark.xml" value="0.204" />
+        <entry key="app/src/main/res/drawable-v24/bg_full_round_sub_color.xml" value="0.367" />
+        <entry key="app/src/main/res/drawable-v24/bg_re_item.xml" value="0.367" />
+        <entry key="app/src/main/res/drawable-v24/bg_vertical_stroke.xml" value="0.367" />
+        <entry key="app/src/main/res/drawable-v24/ic_plus_white.xml" value="0.367" />
+        <entry key="app/src/main/res/drawable/bg_add_product_button.xml" value="0.367" />
+        <entry key="app/src/main/res/drawable/bg_bottom_sheet.xml" value="0.1565" />
+        <entry key="app/src/main/res/drawable/bg_default_edt.xml" value="0.1565" />
+        <entry key="app/src/main/res/drawable/bg_edit_id.xml" value="0.367" />
+        <entry key="app/src/main/res/drawable/bg_full_round_main_color.xml" value="0.367" />
+        <entry key="app/src/main/res/drawable/bg_full_round_tin_brown.xml" value="0.367" />
+        <entry key="app/src/main/res/drawable/bg_full_round_tin_gray.xml" value="0.1565" />
+        <entry key="app/src/main/res/drawable/bg_login_button.xml" value="0.367" />
+        <entry key="app/src/main/res/drawable/bg_main_color.xml" value="0.1565" />
+        <entry key="app/src/main/res/drawable/bg_product_item.xml" value="0.367" />
+        <entry key="app/src/main/res/drawable/bg_simple_spinner.xml" value="0.1565" />
+        <entry key="app/src/main/res/drawable/bg_top_stroke.xml" value="0.367" />
+        <entry key="app/src/main/res/drawable/bg_white_solid_with_stroke.xml" value="0.3435" />
+        <entry key="app/src/main/res/drawable/checkbox.xml" value="0.25" />
+        <entry key="app/src/main/res/drawable/ic_btnav_account_management.xml" value="0.367" />
+        <entry key="app/src/main/res/drawable/ic_btnav_home.xml" value="0.367" />
+        <entry key="app/src/main/res/drawable/ic_btnav_item_management.xml" value="0.367" />
+        <entry key="app/src/main/res/drawable/ic_btnav_setting.xml" value="0.367" />
+        <entry key="app/src/main/res/drawable/ic_previous.xml" value="0.367" />
+        <entry key="app/src/main/res/layout/account_apply_state_bottom_sheet_dialog.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_account_apply_state.xml" value="0.14417049728374426" />
+        <entry key="app/src/main/res/layout/activity_add_item.xml" value="0.20852641334569044" />
+        <entry key="app/src/main/res/layout/activity_add_product.xml" value="0.28131680205215903" />
+        <entry key="app/src/main/res/layout/activity_edit_product.xml" value="0.28131680205215903" />
+        <entry key="app/src/main/res/layout/activity_find_account.xml" value="0.42240273621205643" />
+        <entry key="app/src/main/res/layout/activity_item_edit.xml" value="0.2689183411714408" />
+        <entry key="app/src/main/res/layout/activity_item_state.xml" value="0.20852641334569044" />
+        <entry key="app/src/main/res/layout/activity_join.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.3118766999093382" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_nfcwrite.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_product.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_product_management.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_sample.xml" value="0.28351449275362317" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.3115942028985507" />
+        <entry key="app/src/main/res/layout/default_bottom_sheet_dialog.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/default_dialog.xml" value="0.20852641334569044" />
+        <entry key="app/src/main/res/layout/dialog_default.xml" value="0.2304638529043042" />
+        <entry key="app/src/main/res/layout/dialog_disburse.xml" value="0.20852641334569044" />
+        <entry key="app/src/main/res/layout/fragment_account_apply_state.xml" value="0.28131680205215903" />
+        <entry key="app/src/main/res/layout/fragment_account_management.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_change_info.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/fragment_find_id.xml" value="0.41000427533133815" />
+        <entry key="app/src/main/res/layout/fragment_find_pw.xml" value="0.41000427533133815" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.41000427533133815" />
+        <entry key="app/src/main/res/layout/fragment_item_management.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_setting.xml" value="0.2365231926452152" />
+        <entry key="app/src/main/res/layout/viewholder_account_apply_state.xml" value="0.42154766994442067" />
+        <entry key="app/src/main/res/layout/viewholder_empty.xml" value="0.3421875" />
+        <entry key="app/src/main/res/layout/viewholder_item.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/viewholder_product.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/viewholder_sample_photo.xml" value="0.3421875" />
+        <entry key="app/src/main/res/menu/menu.xml" value="0.42240273621205643" />
+        <entry key="app/src/main/res/xml/nfc_tech_filter.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

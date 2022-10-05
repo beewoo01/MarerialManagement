@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MaterialManagement" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <!-- Primary brand color. -->
+
+        <item name="toolbarStyle">@style/Widget.MaterialManagement.Toolbar</item>
+        <item name="toolbarWithArrowButtonStyle">@style/Widget.MaterialManagement.Toolbar.WithArrow</item>
+        <item name="editTextStyle">@style/Widget.MaterialManagement.EditText</item>
+
+        <item name="colorPrimary">@color/main_color</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" >@color/black</item>
+
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="Theme.MaterialManagement.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.MaterialManagement.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.MaterialManagement.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

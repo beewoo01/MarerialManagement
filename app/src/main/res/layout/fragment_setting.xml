@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".screen.main.setting.SettingFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/Widget.MaterialManagement.Toolbar.WithArrow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:text="@string/setting"
+            android:textColor="@color/main_color" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/groupNumTxv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/font_deep_gray_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        tools:text="소속번호 : 001" />
+
+    <ImageView
+        android:id="@+id/profileImb"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_default_profile"
+        android:contentDescription="@string/profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/groupNumTxv"
+        />
+
+    <TextView
+        android:id="@+id/groupNameTxv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        tools:text="일번부대"
+        android:textColor="@color/font_black_color"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/profileImb"
+        app:layout_constraintEnd_toEndOf="@id/profileImb"
+        app:layout_constraintTop_toBottomOf="@id/profileImb"
+        />
+
+    <TextView
+        android:id="@+id/changeInfoTxv"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_top_stroke"
+        android:gravity="center_vertical"
+        android:text="@string/changeInfo"
+        android:textColor="@color/main_color"
+        android:textSize="13sp"
+        android:paddingHorizontal="10dp"
+        android:drawablePadding="10dp"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintTop_toBottomOf="@id/groupNameTxv"
+        app:layout_constraintBottom_toTopOf="@id/logoutTxv"
+        app:drawableStartCompat="@drawable/ic_update_info_ic" />
+
+    <TextView
+        android:id="@+id/logoutTxv"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:background="@drawable/bg_top_stroke"
+        android:gravity="center_vertical"
+        android:text="@string/logout"
+        android:textColor="@color/font_black_color"
+        android:textSize="13sp"
+        android:paddingHorizontal="10dp"
+        android:drawablePadding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/nfcTagRegisterTxv"
+        app:layout_constraintTop_toBottomOf="@id/changeInfoTxv"
+        app:drawableStartCompat="@drawable/ic_logout_ic" />
+
+    <TextView
+        android:id="@+id/nfcTagRegisterTxv"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:background="@drawable/bg_vertical_stroke"
+        android:gravity="center_vertical"
+        android:text="@string/nfcTagRegister"
+        android:textColor="@color/font_black_color"
+        android:textSize="13sp"
+        android:paddingHorizontal="10dp"
+        android:drawablePadding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logoutTxv"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:drawableStartCompat="@drawable/ic_nfc_ic" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
